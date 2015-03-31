@@ -26,8 +26,8 @@ from ckanserviceprovider import web
 if not locale.getlocale()[0]:
     locale.setlocale(locale.LC_ALL, '')
 
-MAX_CONTENT_LENGTH = 10485760  # 10MB
-DOWNLOAD_TIMEOUT = 30
+MAX_CONTENT_LENGTH = 1073741824 # 1 GB
+DOWNLOAD_TIMEOUT   = 600        # 10 minutes
 
 _TYPE_MAPPING = {
     'String': 'text',
