@@ -24,3 +24,6 @@ PORT = 8800
 
 #LOG_FILE = '/tmp/ckan_service.log'
 STDERR = True
+
+MAX_CONTENT_LENGTH = 1073741824  # 1 GB
+DOWNLOAD_TIMEOUT = 600  # 10 minutes
